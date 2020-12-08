@@ -3,5 +3,5 @@
 class FizzBuzz():
     
     def __init__(self):
-        pass
+        self.fizzbuzz = [str(i) for i in range(1, 101)]
         
