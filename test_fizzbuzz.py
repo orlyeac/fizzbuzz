@@ -32,3 +32,11 @@ class TestFizzBuzz(unittest.TestCase):
 		self.assertEqual(FizzBuzz().at(200), 'buzz')
 		self.assertEqual(FizzBuzz().at(420), 'fizzbuzz')
 		self.assertEqual(FizzBuzz().at('p'), None)
+
+	def test_set_range(self):
+		tmp = FizzBuzz()
+		tmp.setrange(14, 43)
+		self.assertEqual(tmp.fizzbuzz[12], '26')
+		tmp = FizzBuzz()
+		tmp.setrange(43, 14)
+		self.assertEqual(tmp.fizzbuzz[14], 'fizzbuzz')
