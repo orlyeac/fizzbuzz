@@ -24,4 +24,7 @@ class TestFizzBuzz(unittest.TestCase):
 		self.assertEqual(FizzBuzz().fizzbuzz[14], 'fizzbuzz')
 		self.assertEqual(FizzBuzz().fizzbuzz[74], 'fizzbuzz')
 
+	def test_custom_range_constructor(self):
+		self.assertEqual(FizzBuzz(14, 43).fizzbuzz[12], '26')
+		self.assertEqual(FizzBuzz(43, 14).fizzbuzz[74], 'fizzbuzz')
 
