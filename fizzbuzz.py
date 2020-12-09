@@ -16,6 +16,14 @@ class FizzBuzz():
         except:
             print('wrong t0 and / or t1. making t0 = 1 and t1 = 100')
         self.fizzbuzz = ['fizz'*(i % 3 == 0) + 'buzz'*(i % 5 == 0) or str(i) for i in range(self.t0, self.t1 + 1)]
+        
+    def at(self, p):
+        try:
+            intp = int(p)
+        except ValueError:
+            print('not an int!')
+            return   
+        return 'fizz'*(p % 3 == 0) + 'buzz'*(p % 5 == 0) or str(p)
 
 
 if __name__ == "__main__":

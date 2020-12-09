@@ -28,3 +28,7 @@ class TestFizzBuzz(unittest.TestCase):
 		self.assertEqual(FizzBuzz(14, 43).fizzbuzz[12], '26')
 		self.assertEqual(FizzBuzz(43, 14).fizzbuzz[74], 'fizzbuzz')
 
+	def test_at(self):
+		self.assertEqual(FizzBuzz().at(200), 'buzz')
+		self.assertEqual(FizzBuzz().at(420), 'fizzbuzz')
+		self.assertEqual(FizzBuzz().at('p'), None)
