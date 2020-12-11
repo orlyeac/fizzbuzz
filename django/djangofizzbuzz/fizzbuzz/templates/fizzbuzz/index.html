@@ -1,0 +1,16 @@
+<form action="{% url 'modify' %}" method="post">
+    {% csrf_token %}
+    <input type="number" name="t0" id="t0" min="1" value="{{ t0 }}">
+    <input type="number" name="t1" id="t1" min="1" value="{{ t1 }}">
+    
+    <input type="submit" value="Modify">
+</form>
+{% if fizzbuzz %}
+    <ul>
+        {% for x in fizzbuzz %}
+            <li>{{ x }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No fizzbuzz.</p>
+{% endif %}
