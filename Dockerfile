@@ -1,5 +1,7 @@
 FROM python:3
 
-ADD fizzbuzz.py /
+ADD ./fizzbuzzMod/fizzbuzz.py /fizzbuzzMod/
 
-CMD [ "python", "./fizzbuzz.py" ]
+ADD main.py /
+
+CMD [ "python", "./main.py" ]

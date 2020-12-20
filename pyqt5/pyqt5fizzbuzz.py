@@ -1,6 +1,9 @@
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-from fizzbuzz import FizzBuzz
+import os
+moduledir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.sys.path.insert(0, moduledir) 
+from fizzbuzzMod.fizzbuzz import FizzBuzz
 from PyQt5.QtCore import *
 import sys
 
